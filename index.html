@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Denis Draka | Web Designer, Poznań</title>
+<meta name="description" content="Denis Draka, web designer in Poznań. Landing pages, websites, presentations and social creatives: designed in Figma and built as real, working code.">
+<meta name="author" content="Denis Draka">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#080505">
+<!-- TODO: замінити YOUR-DOMAIN.com на реальний домен (canonical, og:url, og:image, twitter:image, а також robots.txt і sitemap.xml) -->
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+<!-- Favicon: знак "DD" з логотипу. Основна іконка вбудована сюди; favicon.ico і apple-touch-icon.png лежать у корені поруч з index.html -->
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGSElEQVR4nMWXa4xVVxXHf2uffe69wzxgGBh0Zjq1aLGQVtE2QiREEylIq021naSamCKxYgy2NeGDmgZS21qxGsT6QftAiYma3qRKa5Dpy2+1NY4gpYXSpsJ1hpbplHnPvfecs/fyw7l3GGbuTCGQuJLz4Zz9+P/P2mv991rC7CZdYPLgAL7N5R9IkA2KXq/wCUXbFWkEEHRUkD6Bg4I8W0a793LyHYAuCPLgAa0JUuvjDjD3povYTMfVlmCrws0GWSIIHsWjkzsKYBAMgqZjpwX+7PEPP8Z/X52+55wEKoxdFx11CwjuFbjLYjIxikO9gCoYOXe9avriFSRATIiQ4COF3UO4HXl6i9W9ZyVQnfA1rlhWh/9DSPDJEg5FE0GC2TxWw1RRJ4jNERDjeorEX/0dp45PJzG5YXXgdjqvzSD7A0xrhIsFsRcAXItIkiEIHb4/Qm/YS6FnKgkD6fnkwW2i/coscsAgrRE+ESS8CHAAESSM8IlBWrPIgU20X5kHt6OCLVSivYOOzAjByyHmmhQcexHAM0whyWBsjH+lCbeql94oD95UU20Yc18uBY8vNTiAgI3wcQ5zzTDmvjTQ02CWzXxoWYAeURBNXXMxbp/LVMALqEOu3sOJ4wZQ0G0hxvpULESMYIJg5mPTR2QKP5llbmW+GHOOIzxoiLGg2wCVb7G0NcIdC5Bmj6ogElMmoTzDEVrRkSz1WJPBe4fHEzEx81crkhSSJWvq8X4y89Qg4tAzGYLltoy7MYNpjvHeBMaU3Biru7q47is3URoZQ4ygqqBQHB6h0HOYw08/y/BgP1YyLLliKV94YBs+TtLdK5KUlEqcPv4WR/a/QOHoYXLSkB4AKg71IbKwjLvRGnS9pEMqIiREtH98Oau+tIGxckSYzVB1ogecc5wpnCJ/53b+/pcnaGht4VO33UScJATWEkx6AJz33LDjbv62+3H2bf8J1oSQBpoKoga/3gIrPVoNPgQhnigxkTiKw6O8NzhEaWwcEaGxpYX6xc00tbZwR/5XDFxXYGJwmOLoOHEUEY8XGX13ABAy9XU0X9aGTzxfvOcu4oky+x7cSX2wAOecqWCuNEC7R5EpBy4mfZvX3MSB+3/JA6uvZ9faW3lwzUb++ft9qEIQhqz77hbUexBh3vwm3nqxhx+t3pDOXbWR/NbtgDI6PMJntt7O4kWdxK6MiEgFs80oUl/znqy6PXEkSYSPHYN9b7PvezspjozinGPJ8g9Tv3ABLklA0vNPkhhXjnEjMc//9lGOv/AiYV0dufmNLLnqIySUMUZQQJEGMwd2DVPOumou2jXWzWJW0HFBGmebYmyAtRlMGNDc2sbNP/w+uaYGAms5ffRNxs8MEVibchPB2pAgDJHQs+7WLSz73BriYolovMg7x97EksV7rf7EuAX6DHJVMnmlg/o07SYGR/j8PVv57N1fPxuEi5oBxUUxz+16BBEDqkwMj7D009fyg5e6qQbhwsvaSKKYxgXzeXLnrxkYKFSDUANEErTPAocM8lFBPRAoSjgvxzwb4Oc30tTaMiMNBwuneOLO7bzx6kt8bPV66hrrsUmWhpZmFnW2TTrdeY/3ytP3/4L9P/45daYR7x0C3qShfsh65BlFb1MQVcWSoe/fR3n5T921hehfr3D4qWcYHuynXpoZ63+Pf/zxqWlCBEmpTP8b/+HI/uc5+VpFiLyQamQqBYp0X7AUK5C7hFIsAJu5/NEc5hulSh0gRtKznW4VPur85J8igjGzJJOk8aT+bC2qkOQwtoR/bA8n77CAOPhZjN9k0utY1avoubXj7KaKd+c5F9SAxPgE5KeAmC4wezl5zKG7s5hAOV/kCzcFl8UEDt29hxOvTxYk/9eSDNAVoLvoLTqSWzx+IESsQnIpwUPEevyAI7llF73FFWmmas2yPIv81WAWX8qy3OPfLaMba5blAJUiMdhLoSdB1jr0YB1BSJqzCRco/pU1UkcQOvRggqydDn4Ogakk9nDi9SGSNRH+IQNRjsAaRLQihjqz2dSpYwaRdA1RhH9oiGRNJejmbs2qNrWR3ELnCo/5jqJfDpDW82lOHdovyJMJ/uHfUHht+p7vS6A6NrU9/yadH/TIBoF1HlaCdkxtz0F6DRxSeM6g3Y9QeBvevz3/H9GmTGRRviL6AAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Open Graph (превʼю в Telegram, Instagram DM, LinkedIn, Behance) -->
+<meta property="og:type" content="profile">
+<meta property="profile:first_name" content="Denis">
+<meta property="profile:last_name" content="Draka">
+<meta property="og:site_name" content="Denis Draka">
+<meta property="og:title" content="Denis Draka | Web Designer, Poznań">
+<meta property="og:description" content="Landing pages, websites, presentations and social creatives. Designed in Figma, built as real, working code.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/">
+<!-- og:image: og-image.jpg (1200×630) у корені сайту. URL має бути АБСОЛЮТНИЙ, з https:// -->
+<meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Denis Draka, web designer: design to code">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="uk_UA">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Denis Draka | Web Designer, Poznań">
+<meta name="twitter:description" content="Landing pages, websites, presentations and social creatives. Designed in Figma, built as real, working code.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.jpg">
+
+<!-- фото першого екрана вантажимо якомога раніше -->
+<link rel="preload" as="image" href="img/denis1.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=JetBrains+Mono:wght@400;500&family=Aboreto&family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=DM+Sans:wght@400;500&display=swap">
+<!-- обгортка, яку раніше додавав артефакт (лишаємо, щоб вигляд не змінився) -->
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>
+/* Layout: a type specimen sheet. Paper ground, giant variable-width name that reacts to the cursor, an asymmetric 12-column grid, cobalt as the one loud colour. Single committed light look. */
+:root{
+  color-scheme:dark;
+  /* Pantone: Black C #030303 · Red Inferno #4E0000 · Dark Ruby #63001F · White Whale #EDEEF0 · Metallic Fir · Granite Gray */
+  --paper:#080505; --paper-2:#161313; --ink:#EDEEF0; --muted:#9A9393; --line:#332B2C;
+  --cobalt:#63001F; --inferno:#4E0000; --cherry-hi:#C8203F; --coral:#FF3D57; --white:#EDEEF0;
+  --f-display:"Unbounded", "Arial Black", "Helvetica Neue", sans-serif;
+  --f-serif:"Unbounded", "Helvetica Neue", sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  --gl:max(16px, env(safe-area-inset-left, 0px)); --gr:max(16px, env(safe-area-inset-right, 0px));
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-display);font-size:15px;font-weight:300;line-height:1.65}
+h1,h2,h3{margin:0;font-weight:800;line-height:.98;letter-spacing:-.03em;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+.mono{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.serif{font-family:var(--f-serif);font-weight:200;font-style:normal;letter-spacing:-.02em}
+.band{padding-left:var(--gl);padding-right:var(--gr)}
+.in{max-width:1400px;margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:var(--paper);border:0;border-radius:999px;padding:14px 24px;font-weight:600;font-size:.95rem;text-decoration:none;cursor:pointer;transition:background .25s,transform .25s}
+.btn:hover{background:var(--cherry-hi);color:var(--ink);transform:translateY(-2px)}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--paper)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb, var(--paper) 88%, transparent);backdrop-filter:blur(10px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:41;background:var(--paper)}
+.nav .in{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-variation-settings:"wdth" 125;font-size:1.05rem;letter-spacing:-.01em}
+.mark i{width:30px;height:30px;border-radius:50%;background:var(--cobalt);color:var(--white);display:grid;place-items:center;font-style:normal;font-size:.8rem;font-variation-settings:"wdth" 75}
+.links{display:flex;gap:4px}
+.links a{text-decoration:none;font-weight:500;padding:8px 14px;border-radius:999px;font-size:.95rem}
+.links a:hover{background:var(--ink);color:var(--paper)}
+.nav-r{display:flex;align-items:center;gap:10px}
+.lang{display:flex;border:1.5px solid var(--ink);border-radius:999px;padding:2px}
+.lang button{border:0;background:transparent;border-radius:999px;padding:5px 11px;font-family:var(--f-mono);font-size:.72rem;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(60% 55% at 78% 62%,rgba(99,0,31,.55),transparent 70%),radial-gradient(40% 40% at 10% 20%,rgba(78,0,0,.35),transparent 70%)}
+.hero .in{padding-block:28px 56px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:20px;row-gap:22px}
+.hero-top{grid-column:1/-1;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1.5px solid var(--ink);padding-bottom:12px}
+.status{display:flex;align-items:center;gap:8px}
+.status i{width:9px;height:9px;border-radius:50%;background:#1BB55C;box-shadow:0 0 0 0 rgba(27,181,92,.6);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 10px rgba(27,181,92,0)}100%{box-shadow:0 0 0 0 rgba(27,181,92,0)}}
+.name{grid-column:1/-1;min-width:0;overflow:hidden;margin:0;font-weight:400;line-height:.8;letter-spacing:-.03em;user-select:none;cursor:default}
+.name .row{display:flex;justify-content:space-between;white-space:nowrap}
+.name .row+.row{margin-top:.02em}
+.ch{display:inline-block;font-size:var(--fs,18vw);font-variation-settings:"wdth" var(--w,100),"wght" var(--g,800);transition:font-variation-settings .25s ease-out,color .25s}
+.name .row:nth-child(2) .ch{color:var(--cherry-hi)}
+.name .ch.hot{color:var(--coral)}
+.hero-say{grid-column:1/7;font-size:clamp(1.6rem,2.6vw,2.4rem);line-height:1.12;font-weight:500;letter-spacing:-.01em}
+.hero-say .serif{font-size:1.15em}
+.hero-side{grid-column:7/11;display:grid;gap:18px;align-content:start}
+.hero-side p{color:var(--muted);max-width:44ch}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.badge{position:absolute;right:max(24px,env(safe-area-inset-right,0px));bottom:40px;width:150px;height:150px;pointer-events:none;z-index:2}
+.badge svg{width:100%;height:100%;animation:spin 18s linear infinite}
+.badge text{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.2em;fill:var(--ink)}
+.badge .core{position:absolute;inset:38px;border-radius:50%;background:var(--coral);display:grid;place-items:center;font-weight:900;font-variation-settings:"wdth" 75;font-size:1.6rem;color:var(--ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* marquee */
+.marq{background:var(--cobalt);color:var(--ink);overflow:hidden;white-space:nowrap;border-block:1.5px solid var(--inferno)}
+.marq .tr{display:inline-flex;gap:40px;padding-block:18px;animation:slide 32s linear infinite;font-weight:800;font-variation-settings:"wdth" 125;font-size:clamp(1.6rem,3vw,2.6rem);letter-spacing:-.01em;line-height:1}
+.marq .tr span{display:inline-flex;align-items:center;gap:40px}
+.marq .tr span::after{content:"";width:16px;height:16px;border-radius:50%;background:var(--ink);display:inline-block}
+.marq .tr span:nth-child(3n)::after{background:#030303}
+.marq .tr .serif{font-weight:400;font-variation-settings:normal;font-size:1.15em}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* section heads */
+.sec{padding-block:110px}
+.sh{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:20px;align-items:end;margin-bottom:56px}
+.sh .num{grid-column:1/3;font-family:var(--f-mono);font-size:.78rem;align-self:start;padding-top:12px}
+.sh h2{grid-column:3/10;font-size:clamp(3.4rem,9vw,8.6rem);font-variation-settings:"wdth" 75}
+.sh h2 .serif{font-weight:400;letter-spacing:-.01em}
+.sh p{grid-column:10/-1;color:var(--muted)}
+
+/* work */
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:56px 20px}
+.case{min-width:0;width:100%;text-decoration:none;display:grid;gap:14px;cursor:pointer;background:none;border:0;padding:0;text-align:left}
+.case:nth-child(1){grid-column:1/8}
+.case:nth-child(2){grid-column:8/-1;margin-top:120px}
+.case:nth-child(3){grid-column:1/6}
+.case:nth-child(4){grid-column:6/-1;margin-top:80px}
+.case:nth-child(5){grid-column:3/11}
+.cover{position:relative;overflow:hidden;border-radius:6px;aspect-ratio:4/3;max-width:100%;transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s}
+.case:nth-child(5) .cover{aspect-ratio:16/8}
+.case:hover .cover{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.case:nth-child(even):hover .cover{transform:translateY(-6px) rotate(.6deg)}
+.view{position:absolute;right:16px;bottom:16px;z-index:5;background:var(--ink);color:var(--paper);border-radius:999px;padding:10px 16px;font-weight:600;font-size:.9rem;transform:translateY(12px);opacity:0;transition:.35s}
+.case:hover .view,.case:focus-visible .view{transform:none;opacity:1}
+.meta{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-top:1.5px solid var(--ink);padding-top:12px}
+.meta h3{font-size:clamp(1.8rem,3vw,2.6rem);font-variation-settings:"wdth" 85;font-weight:800}
+.meta .mono{color:var(--muted);text-align:right;white-space:nowrap}
+.case .sub{color:var(--muted);max-width:52ch}
+
+/* covers drawn in each project's own palette */
+.cv{position:absolute;inset:0}
+.cv-img{width:100%;height:100%;object-fit:cover;display:block}
+.cv-vael{background:#ded4ca;color:#5b4837;font-family:"Aboreto","Times New Roman",serif}
+.cv-vael .win{position:absolute;left:7%;right:7%;top:9%;bottom:0;background:#fdfcfb;border-radius:8px 8px 0 0;box-shadow:0 20px 40px -20px rgba(91,72,55,.5);overflow:hidden;display:grid;grid-template-rows:22px auto 1fr}
+.cv-vael .bar{background:#bcac9e;display:flex;gap:6px;align-items:center;padding:0 10px}
+.cv-vael .bar i{width:7px;height:7px;border-radius:50%;background:#fdfcfb;opacity:.8}
+.cv-vael .hd{display:flex;justify-content:space-between;padding:12px 18px;font-size:.7rem;letter-spacing:.2em}
+.cv-vael .body{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;padding:6px 18px 0}
+.cv-vael h4{margin:0;font-weight:400;font-size:clamp(1.3rem,3.2vw,2.8rem);line-height:1;letter-spacing:.06em}
+.cv-vael .sm{font-family:"DM Sans",sans-serif;font-size:.68rem;color:#93806f;margin-top:10px;max-width:26ch}
+.cv-vael .arch{border-radius:999px 999px 0 0;background:linear-gradient(160deg,#93806f,#5b4837);position:relative;overflow:hidden}
+.cv-vael .arch::before{content:"";position:absolute;left:20%;right:20%;bottom:0;height:60%;background:linear-gradient(#bcac9e,#ded4ca);border-radius:999px 999px 0 0;opacity:.6}
+.cv-vael .sw{position:absolute;left:7%;bottom:6%;display:flex;gap:4px;z-index:2}
+.cv-vael .sw i{width:18px;height:18px;border-radius:50%;border:2px solid #fdfcfb}
+
+.cv-rit{background:#120f0c;color:#e7d3a4;font-family:"Bodoni Moda",Didot,serif;display:grid;grid-template-rows:auto 1fr auto;padding:6% 7%}
+.cv-rit .top{display:flex;justify-content:space-between;font-family:"JetBrains Mono",monospace;font-size:.6rem;letter-spacing:.2em;color:#9c8458}
+.cv-rit h4{margin:0;align-self:center;font-weight:500;font-size:clamp(2.4rem,7vw,5.6rem);line-height:.9;text-align:center}
+.cv-rit h4 em{display:block;font-size:.4em;letter-spacing:.3em;font-style:normal;color:#9c8458;margin-top:.5em}
+.cv-rit .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cv-rit .cards div{border:1px solid #3a3020;padding:8px 10px;display:flex;justify-content:space-between;font-family:"DM Sans",sans-serif;font-size:.62rem;color:#c7b58a}
+.cv-rit .cards b{color:#e7d3a4;font-weight:500}
+.cv-rit .pole{position:absolute;right:7%;top:24%;width:10px;height:38%;border-radius:6px;background:repeating-linear-gradient(135deg,#e7d3a4 0 8px,#120f0c 8px 16px);opacity:.6}
+
+.cv-lab{background:#141414}
+.cv-lab canvas{position:absolute;inset:0;width:100%;height:100%}
+.cv-lab .t{position:absolute;left:7%;bottom:8%;color:#f1eee7;z-index:1}
+.cv-lab .t b{display:block;font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:clamp(1.8rem,4vw,3.2rem);line-height:1}
+.cv-lab .t span{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.18em;opacity:.7}
+
+.cv-chess{background:#e9e2d0;display:grid;grid-template-columns:1fr 1fr}
+.cv-chess .board{background:repeating-conic-gradient(#2b2620 0 25%,#e9e2d0 0 50%) 0 0/25% 25%;position:relative}
+.cv-chess .board span{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(5rem,13vw,10rem);color:#f5efe0;text-shadow:0 0 0 #2b2620,3px 3px 0 #2b2620,-2px -2px 0 #2b2620,2px -2px 0 #2b2620,-2px 2px 0 #2b2620;line-height:1}
+.cv-chess .side{padding:10% 9%;display:grid;align-content:space-between;color:#2b2620}
+.cv-chess .side b{font-family:var(--f-serif);font-weight:400;font-size:clamp(2rem,4.4vw,3.6rem);line-height:.95}
+.cv-chess .tl{display:grid;gap:6px;font-family:var(--f-mono);font-size:.6rem}
+.cv-chess .tl div{display:flex;gap:10px;border-top:1px solid #2b262055;padding-top:5px}
+.cv-chess .tl i{font-style:normal;font-weight:500;min-width:44px}
+
+.cv-cr{background:radial-gradient(120% 90% at 50% 100%,#63001F,#1a0508 70%);display:flex;justify-content:center;align-items:center;gap:1.2%;padding:0 3%}
+.cv-cr img{width:18.6%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;box-shadow:0 22px 40px -18px rgba(0,0,0,.75);transition:transform .5s}
+.cv-cr img:nth-child(odd){transform:translateY(7%) rotate(-3deg)}
+.cv-cr img:nth-child(even){transform:translateY(-6%) rotate(2.5deg)}
+.cv-cr img:nth-child(3){width:22%;transform:none;z-index:1}
+.card3:hover .cv-cr img,.case:hover .cv-cr img{transform:none}
+.cv-soc{background:var(--cobalt);display:flex;justify-content:center;align-items:center;gap:3.5%}
+.cv-soc .ph{width:18%;aspect-ratio:9/16;border-radius:14px;padding:6px;background:#0d0d0d;box-shadow:0 20px 40px -18px rgba(0,0,0,.6);transition:transform .5s}
+.cv-soc .ph:nth-child(odd){transform:translateY(10%) rotate(-4deg)}
+.cv-soc .ph:nth-child(even){transform:translateY(-6%) rotate(3deg)}
+.case:hover .cv-soc .ph{transform:none}
+.cv-soc .sc{width:100%;height:100%;border-radius:9px;padding:10% 9%;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.cv-soc .sc b{font-weight:900;font-variation-settings:"wdth" 70;font-size:clamp(.9rem,1.9vw,1.6rem);line-height:.9;text-transform:uppercase}
+.cv-soc .sc i{font-style:normal;font-family:var(--f-mono);font-size:.5rem;letter-spacing:.1em}
+.cv-soc .bar{height:3px;border-radius:2px;background:currentColor;opacity:.4;display:flex}
+.cv-soc .bar::before{content:"";width:60%;background:currentColor;border-radius:2px}
+
+/* process */
+.proc{background:var(--paper-2);color:var(--ink)}
+.proc .sh p{color:#A7A39A}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1.5px solid #3A3833}
+.step{padding:28px 22px 10px 0;display:grid;gap:14px;align-content:start;border-right:1.5px solid #3A3833}
+.step+.step{padding-left:22px}
+.step:last-child{border-right:0}
+.step .n{font-weight:900;font-variation-settings:"wdth" 62;font-size:5.4rem;line-height:.8;color:var(--cherry-hi);transition:color .3s,font-variation-settings .3s}
+.step:hover .n{color:var(--coral);font-variation-settings:"wdth" 125}
+.step h3{font-size:1.6rem;font-variation-settings:"wdth" 100}
+.step p{color:#A7A39A;font-size:.98rem}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:56px}
+.tools span{border:1.5px solid #3A3833;border-radius:999px;padding:8px 16px;font-family:var(--f-mono);font-size:.76rem}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:20px;row-gap:32px;align-items:start}
+.about .big{grid-column:1/9;font-size:clamp(1.6rem,3.1vw,2.9rem);line-height:1.08;font-weight:500;letter-spacing:-.015em}
+.about .big .serif{font-size:1.1em}
+.about .big mark{background:none;color:var(--cherry-hi)}
+.facts{grid-column:9/-1;display:grid;border-top:1.5px solid var(--ink)}
+.facts div{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1.5px solid var(--line)}
+.facts span{color:var(--muted)}
+.facts b{font-weight:600;text-align:right}
+
+/* contact */
+.contact{background:radial-gradient(120% 90% at 85% 0%,var(--cobalt),var(--inferno) 55%,#2a0000);color:var(--white);overflow:hidden}
+.contact .in{padding-block:110px 40px}
+.say{font-weight:900;font-variation-settings:"wdth" 75;font-size:clamp(4rem,14vw,13rem);line-height:.82;letter-spacing:-.03em;margin:0}
+.say .serif{font-weight:400;font-variation-settings:normal;color:#F2AFBC;letter-spacing:-.01em}
+.mail{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:44px}
+.mail a{font-size:clamp(1.4rem,3.4vw,2.8rem);font-weight:700;text-decoration:none;border-bottom:3px solid var(--white);line-height:1.2;word-break:break-all}
+.copy{border:1.5px solid var(--white);background:transparent;color:var(--white);border-radius:999px;padding:9px 16px;cursor:pointer;font-family:var(--f-mono);font-size:.74rem}
+.copy:hover{background:var(--white);color:var(--cobalt)}
+.cgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:64px;border-top:1.5px solid rgba(255,255,255,.5)}
+.cgrid>div{padding:20px 18px 20px 0;display:grid;gap:8px;align-content:start}
+.cgrid>div+div{padding-left:18px;border-left:1.5px solid rgba(255,255,255,.5)}
+.cgrid .mono{opacity:.75}
+.cgrid a,.cgrid p{text-decoration:none;font-weight:600;font-size:1.05rem}
+.cgrid a:hover{text-decoration:underline}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:64px;font-family:var(--f-mono);font-size:.72rem;opacity:.85}
+
+/* case overlay */
+.ov-live{justify-self:start}
+.ov{position:fixed;inset:0;z-index:60;background:var(--paper);overflow-y:auto;animation:up .45s cubic-bezier(.2,.7,.2,1)}
+@keyframes up{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.ov-bar{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:calc(14px + env(safe-area-inset-top,0px));padding-bottom:14px;padding-left:var(--gl);padding-right:var(--gr);background:color-mix(in srgb, var(--paper) 92%, transparent);backdrop-filter:blur(8px);border-bottom:1.5px solid var(--ink)}
+.ov-in{max-width:1200px;margin:0 auto;padding-block:48px 100px;display:grid;gap:44px}
+.ov h2{font-size:clamp(3.2rem,9vw,8rem);font-variation-settings:"wdth" 75}
+.ov .lead{font-size:clamp(1.3rem,2.2vw,1.8rem);line-height:1.3;max-width:44ch;font-weight:500}
+.ov .cover{aspect-ratio:16/9;border-radius:8px}
+.ov-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1.5px solid var(--ink)}
+.ov-meta div{padding:14px 14px 14px 0;display:grid;gap:4px}
+.ov-meta div+div{padding-left:14px;border-left:1.5px solid var(--line)}
+.ov-meta span{color:var(--muted)}
+.ov-steps{display:grid;gap:0;border-top:1.5px solid var(--ink)}
+.ov-steps article{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:24px 0;border-bottom:1.5px solid var(--line)}
+.ov-steps h3{font-size:1.5rem;font-variation-settings:"wdth" 90}
+.ov-steps p{color:#C9C3C3;max-width:64ch}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chips span{display:flex;align-items:center;gap:8px;border:1.5px solid var(--ink);border-radius:999px;padding:5px 12px 5px 6px;font-family:var(--f-mono);font-size:.72rem}
+.chips i{width:18px;height:18px;border-radius:50%;display:block;border:1px solid rgba(0,0,0,.15)}
+.spec{display:flex;gap:28px;flex-wrap:wrap;margin-top:12px;align-items:baseline}
+.spec div{display:grid;gap:2px}
+.spec b{font-size:2.6rem;font-weight:400;line-height:1}
+.spec span{font-family:var(--f-mono);font-size:.7rem;color:var(--muted)}
+.ov-next{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1.5px solid var(--ink);padding-top:22px}
+.ov-next button{background:none;border:0;cursor:pointer;text-align:right;padding:0}
+.ov-next b{display:block;font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;font-variation-settings:"wdth" 75}
+.note{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.toast{position:fixed;z-index:80;left:50%;transform:translateX(-50%);bottom:calc(22px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--paper);border-radius:999px;padding:11px 18px;font-weight:500;max-width:calc(100% - 32px)}
+
+
+/* hero: sticky stage, words travel behind a 3D cherry (after Noomo Labs) */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hero{position:relative;height:340vh;overflow:visible;background:none}
+.h-stage{position:sticky;top:0;height:100vh;overflow:hidden;background:var(--paper)}
+.h-glow{position:absolute;inset:0;background:radial-gradient(42% 46% at 50% 54%,rgba(99,0,31,.55),transparent 70%),radial-gradient(70% 60% at 50% 120%,rgba(78,0,0,.55),transparent 70%)}
+.h-words{position:absolute;left:0;right:0;top:50%;transform:translateY(-46%);z-index:1;pointer-events:none}
+.h-track{display:flex;gap:.28em;white-space:nowrap;will-change:transform;font-weight:900;font-variation-settings:"wdth" 62;font-size:clamp(7rem,26vh,22rem);line-height:.82;letter-spacing:-.01em;text-transform:uppercase}
+.h-track span{color:var(--ink)}
+.h-track span.c{color:var(--cherry-hi)}
+.h-track span.o{color:transparent;-webkit-text-stroke:2px rgba(237,238,240,.55)}
+.h-ph{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%);width:min(26vw,380px);z-index:2;pointer-events:none;will-change:transform}
+.h-ph-in{position:relative;aspect-ratio:9/10;overflow:hidden;background:#1a1414;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.h-ph-in img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;will-change:opacity,transform}
+#hPh2{opacity:0}
+.h-ph-n{position:absolute;left:calc(100% + 14px);top:0;writing-mode:vertical-rl;display:flex;align-items:center;gap:8px;font-size:.66rem;color:var(--ink)}
+.h-ph-n i{width:1px;height:40px;background:currentColor;display:block}
+@media (max-width:760px){.h-ph{width:56vw;top:50%}.h-ph-n{display:none}}
+#shards{position:absolute;inset:0;width:100%;height:100%;z-index:3;display:block;pointer-events:none}
+.h-ui{position:absolute;inset:0;z-index:4;pointer-events:none;padding-top:8px}
+.h-grid{height:100%;display:grid;grid-template-rows:auto 1fr auto;padding-bottom:28px}
+.h-ui a,.h-ui button{pointer-events:auto}
+.h-note{position:absolute;max-width:30ch;font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.35;transition:opacity .4s,transform .4s}
+.h-note.l{left:max(24px,env(safe-area-inset-left,0px));top:24vh;font-weight:500}
+.h-note.r{right:max(24px,env(safe-area-inset-right,0px));top:62vh;color:var(--muted);text-align:right;font-size:.98rem}
+.h-bottom .btn{white-space:nowrap}
+.h-bottom .hero-ctas{display:flex;flex-wrap:wrap;gap:10px;flex:1 1 auto;min-width:0}
+.h-bottom{grid-row:3;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.h-scroll{display:flex;align-items:center;gap:12px;color:var(--muted)}
+.h-scroll i{width:120px;height:2px;background:var(--line);display:block;position:relative}
+.h-scroll b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--cherry-hi)}
+
+/* work: concave ribbon of cases (after Jesper Landberg) */
+.work{position:relative;height:570vh;background:#050303}
+.w-stage{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto}
+.w-head .in{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,26ch);gap:24px;align-items:end;padding-top:84px}
+.w-head h2{font-size:clamp(2.6rem,6vw,5.4rem);font-variation-settings:"wdth" 75}
+.w-head p{color:var(--muted);font-size:.95rem}
+.ribbon{position:relative;perspective:var(--P,1100px);perspective-origin:50% 50%;overflow:hidden;cursor:grab;touch-action:pan-y}
+.ribbon.drag{cursor:grabbing}
+.card3{position:absolute;left:50%;top:50%;width:var(--cw);transform-style:preserve-3d;backface-visibility:hidden;will-change:transform;background:none;border:0;padding:0;text-align:left;cursor:pointer}
+.card3 .cover{aspect-ratio:16/10;border-radius:10px;box-shadow:0 40px 80px -40px rgba(0,0,0,.9)}
+.card3 .cap{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-top:14px;color:var(--ink)}
+.card3 .cap b{font-size:clamp(1.1rem,1.6vw,1.5rem);font-weight:800;font-variation-settings:"wdth" 85}
+.card3 .cap span{font-family:var(--f-mono);font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.card3::after{content:"";position:absolute;inset:0 0 auto;aspect-ratio:16/10;border-radius:10px;background:#000;opacity:var(--dim,0);pointer-events:none}
+.card3:focus-visible .cover{outline:3px solid var(--cherry-hi);outline-offset:4px}
+.w-foot .in{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:18px 26px;border-top:1px solid var(--line)}
+.w-foot b{font-size:clamp(1.2rem,2vw,1.7rem);font-weight:800;font-variation-settings:"wdth" 85}
+@media (max-width:960px){.w-head .in{grid-template-columns:minmax(0,1fr);gap:8px;padding-top:76px}.w-head p{display:none}.w-hint{display:none}
+  .h-note.l{top:16vh}.h-note.r{display:none}}
+@media (max-width:560px){.h-track{font-size:clamp(5rem,20vh,9rem)}.h-scroll{display:none}}
+@media (prefers-reduced-motion:reduce){.hero{height:auto}.h-stage{position:relative}.work{height:auto}.w-stage{position:relative}}
+
+@media (max-width:960px){
+  .links{display:none}
+  .hero-say,.hero-side{grid-column:1/-1}
+  .badge{width:110px;height:110px}.badge .core{inset:28px;font-size:1.2rem}
+  .sh .num,.sh h2,.sh p{grid-column:1/-1}.sh{row-gap:16px}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .case:nth-child(n){grid-column:auto;margin-top:0}
+  .case:nth-child(5) .cover{aspect-ratio:4/3}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .step:nth-child(2){border-right:0}.step:nth-child(3){padding-left:0}.step:nth-child(n+3){border-top:1.5px solid #3A3833}
+  .about .big,.facts{grid-column:1/-1}
+  .cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cgrid>div:nth-child(3){padding-left:0;border-left:0}.cgrid>div:nth-child(n+3){border-top:1.5px solid rgba(255,255,255,.5)}
+  .ov-meta{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ov-meta div:nth-child(3){padding-left:0;border-left:0}
+  .ov-steps article{grid-template-columns:minmax(0,1fr);gap:8px}
+}
+@media (max-width:560px){
+  .sec{padding-block:72px}
+  .grid{gap:44px}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .step,.step+.step{padding-left:0;border-right:0}.step+.step{border-top:1.5px solid #3A3833}
+  .cgrid{grid-template-columns:minmax(0,1fr)}.cgrid>div+div{padding-left:0;border-left:0;border-top:1.5px solid rgba(255,255,255,.5)}
+  .badge{display:none}
+  .nav .btn{display:none}
+  .meta{flex-direction:column;gap:4px}.meta .mono{text-align:left}
+  .cv-rit .cards{grid-template-columns:1fr 1fr}.cv-rit .cards div:last-child{display:none}
+}
+</style>
+
+<!-- ================= АНАЛІТИКА ================= -->
+<!-- GA4: вставити тег тут
+     Google Analytics → Admin → Data streams → Web → "View tag instructions". Замініть G-XXXXXXXXXX на свій ID:
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+<!-- Meta Pixel: вставити тут (для портфоліо зазвичай не потрібен) -->
+</head>
+<body>
+<header class="nav band"><div class="in">
+  <a class="mark" href="#top"><i>DD</i>Denis Draka</a>
+  <nav class="links" aria-label="Sections"><a href="#work" data-i="nav.work">Work</a><a href="#process" data-i="nav.process">Process</a><a href="#about" data-i="nav.about">About</a><a href="#contact" data-i="nav.contact">Contact</a></nav>
+  <div class="nav-r"><div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true" aria-label="English">EN</button><button type="button" data-lang="ua" aria-pressed="false" lang="uk" aria-label="Українська">UA</button></div><a class="btn" href="#contact" data-i="nav.cta" style="padding:10px 18px">Let's talk</a></div>
+</div></header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="h-stage">
+      <div class="h-glow" aria-hidden="true"></div>
+      <div class="h-words" aria-hidden="true"><div class="h-track" id="hTrack"></div></div>
+      <div class="h-ph" id="hPh"><div class="h-ph-in"><img src="img/denis1.jpg" alt="Denis Draka" width="720" height="800" decoding="async" fetchpriority="high"><img src="img/denis2.jpg" alt="" id="hPh2" width="720" height="800" decoding="async" loading="lazy"></div><div class="h-ph-n mono" aria-hidden="true"><span id="hPhN">01</span><i></i><span>02</span></div></div>
+      <canvas id="shards" aria-hidden="true"></canvas>
+      <div class="h-ui band"><div class="in h-grid">
+        <div class="hero-top mono"><span class="status"><i></i><span data-i="hero.status">Available for new projects</span></span><span data-i="hero.loc">Web designer · Poznań, Poland</span><span>©2026</span></div>
+        <h1 class="sr" data-i="hero.h1">Denis Draka, web designer</h1>
+        <p class="h-note l" id="noteL" data-i="hero.say">I design websites in <span class="serif">Figma</span> and turn them into real, working code.</p>
+        <p class="h-note r" id="noteR" data-i="hero.side">Landing pages, websites, presentations and social creatives. Concept to launch, with a strong focus on typography, photography and the details people remember.</p>
+        <div class="h-bottom"><div class="hero-ctas"><a class="btn" href="#work"><span data-i="hero.cta1">See my work</span> ↓</a><a class="btn line" href="#contact" data-i="hero.cta2">Start a project</a></div>
+          <div class="h-scroll mono"><span data-i="hero.scroll">Scroll</span><i><b id="hBar"></b></i></div></div>
+      </div></div>
+    </div>
+  </section>
+
+  <div class="marq" aria-hidden="true"><div class="tr" id="marq"></div></div>
+
+  <section class="work" id="work">
+    <div class="w-stage">
+      <div class="w-head band"><div class="in"><span class="num mono">(01)</span><h2 data-i="work.h">Selected <span class="serif">work</span></h2><p data-i="work.p">Seven projects from the last months. Open any case to see how it went from brief to finished design.</p></div></div>
+      <div class="ribbon" id="ribbon"></div>
+      <div class="w-foot band"><div class="in"><span class="mono" id="wIdx">01 / 07</span><b id="wTitle"></b><span class="mono w-hint" data-i="work.hint">Scroll or drag · click to open</span></div></div>
+    </div>
+  </section>
+
+  <section class="sec proc band" id="process"><div class="in">
+    <div class="sh"><span class="num">(02)</span><h2 data-i="proc.h">How I <span class="serif">work</span></h2><p data-i="proc.p">The same four steps for every project, so you always know what happens next.</p></div>
+    <div class="steps" id="steps"></div>
+    <div class="tools"><span>Figma</span><span>Claude AI</span><span>HTML · CSS · JS</span><span>Google Fonts</span><span>Unsplash</span><span>Behance</span><span>Dribbble</span></div>
+  </div></section>
+
+  <section class="sec about band" id="about"><div class="in">
+    <div class="sh"><span class="num">(03)</span><h2 data-i="about.h">About <span class="serif">me</span></h2></div>
+    <div class="wrap">
+      <p class="big" data-i="about.big">I'm Denis, a junior web designer based in <mark>Poznań</mark>. I care about <span class="serif">big type</span>, honest photography and pages that feel finished down to the last button.</p>
+      <div class="facts">
+        <div><span data-i="f.role">Role</span><b data-i="f.roleV">Web designer</b></div>
+        <div><span data-i="f.base">Based in</span><b data-i="f.baseV">Poznań, Poland</b></div>
+        <div><span data-i="f.tools">Design</span><b>Figma</b></div>
+        <div><span data-i="f.build">Build</span><b data-i="f.buildV">Code with Claude AI</b></div>
+        <div><span data-i="f.lang">Works in</span><b data-i="f.langV">English, Ukrainian</b></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="contact band" id="contact"><div class="in">
+    <p class="mono" style="opacity:.8">(04) <span data-i="c.k">Contact</span></p>
+    <h2 class="say" data-i="c.h">Let's make it <span class="serif">bold.</span></h2>
+    <div class="mail"><a href="mailto:drakadenis08@gmail.com" id="mailA">drakadenis08@gmail.com</a><button type="button" class="copy" data-copy="drakadenis08@gmail.com" data-i="c.copy">Copy email</button></div>
+    <div class="cgrid">
+      <div><span class="mono" data-i="c.phone">Phone</span><p>+48 576 881 428 <button type="button" class="copy" data-copy="+48576881428" aria-label="Copy Polish phone number" style="padding:4px 10px;font-size:.62rem">PL</button></p><p>+380 98 247 71 05 <button type="button" class="copy" data-copy="+380982477105" aria-label="Copy Ukrainian phone number" style="padding:4px 10px;font-size:.62rem">UA</button></p></div>
+      <div><span class="mono" data-i="c.msg">Messages</span><a href="https://t.me/draka_denis" target="_blank" rel="noopener noreferrer">Telegram @draka_denis ↗</a><a href="https://www.instagram.com/denis.draka" target="_blank" rel="noopener noreferrer">Instagram @denis.draka ↗</a></div>
+      <div><span class="mono" data-i="c.port">Portfolio</span><a href="https://www.behance.net/a4b1257a" target="_blank" rel="noopener noreferrer">Behance ↗</a><a href="https://dribbble.com/drakadenis08" target="_blank" rel="noopener noreferrer">Dribbble ↗</a></div>
+      <div><span class="mono" data-i="c.where">Studio</span><p data-i="c.whereV">Poznań, Poland</p><p data-i="c.remote" style="font-weight:400;opacity:.85">Working remotely worldwide</p></div>
+    </div>
+    <div class="foot"><span>© 2026 Denis Draka</span><span data-i="c.made">Designed in Figma · built with Claude AI</span><a href="#top" style="text-decoration:none" data-i="c.top">Back to top ↑</a></div>
+  </div></section>
+</main>
+
+<div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-labelledby="ovTitle">
+  <div class="ov-bar"><span class="mono" id="ovPos"></span><button type="button" class="btn" id="ovClose" style="padding:9px 18px" data-i="ov.close">Close ✕</button></div>
+  <div class="ov-in band" id="ovBody"></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,2200)}
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- copy: EN / UA ---------- */
+const T={
+en:{"nav.work":"Work","nav.process":"Process","nav.about":"About","nav.contact":"Contact","nav.cta":"Let's talk",
+ "hero.status":"Available for new projects","hero.loc":"Web designer · Poznań, Poland",
+ "hero.say":'I design websites in <span class="serif">Figma</span> and turn them into real, working code.',
+ "hero.side":"Landing pages, websites, presentations and social creatives. Concept to launch, with a strong focus on typography, photography and the details people remember.",
+ "hero.cta1":"See my work","hero.cta2":"Start a project","hero.h1":"Denis Draka, web designer","hero.scroll":"Scroll","work.hint":"Scroll or drag · click to open",
+ words:[["DENIS"],["DRAKA","c"],["·","o"],["DESIGN"],["TO","o"],["CODE","c"],["·","o"],["BOLD"],["TYPE","c"],["·","o"],["REAL","o"],["WEBSITES"]],
+ "work.h":'Selected <span class="serif">work</span>',"work.p":"Seven projects from the last months. Open any case to see how it went from brief to finished design.",
+ "proc.h":'How I <span class="serif">work</span>',"proc.p":"The same four steps for every project, so you always know what happens next.",
+ "about.h":'About <span class="serif">me</span>',
+ "about.big":'I\'m Denis, a junior web designer based in <mark>Poznań</mark>. I care about <span class="serif">big type</span>, honest photography and pages that feel finished down to the last button.',
+ "f.role":"Role","f.roleV":"Web designer","f.base":"Based in","f.baseV":"Poznań, Poland","f.tools":"Design","f.build":"Build","f.buildV":"Code with Claude AI","f.lang":"Works in","f.langV":"English, Ukrainian",
+ "c.k":"Contact","c.h":'Let\'s make it <span class="serif">bold.</span>',"c.copy":"Copy email","c.phone":"Phone","c.msg":"Messages","c.port":"Portfolio","c.where":"Studio","c.whereV":"Poznań, Poland","c.remote":"Working remotely worldwide","c.made":"Designed in Figma · built with Claude AI","c.top":"Back to top ↑",
+ "ov.close":"Close ✕",copied:"Copied",copyFail:"Select the text and copy it manually",view:"View case",next:"Next case",
+ marq:["Web design","Landing pages","Presentations","Social creatives","Figma → code","Typography"],
+ badge:"OPEN FOR WORK · OPEN FOR WORK · OPEN FOR WORK ·",
+ steps:[["Brief","We talk about the goal, the audience and what the page has to do. I write it down as a one-page brief you approve."],["Moodboard","I collect references, fonts and a palette, then show you a direction before drawing a single screen."],["Design in Figma","Desktop, tablet and mobile layouts with real text and photos, refined together in one or two rounds of comments."],["Build & launch","I turn the Figma design into clean, responsive code with Claude AI and check every screen before handover."]],
+ labels:{type:"Type",year:"Year",role:"Role",tools:"Tools",palette:"Palette",type2:"Typography"}},
+ua:{"nav.work":"Роботи","nav.process":"Процес","nav.about":"Про мене","nav.contact":"Контакти","nav.cta":"Написати",
+ "hero.status":"Відкритий до нових проєктів","hero.loc":"Вебдизайнер · Познань, Польща",
+ "hero.say":'Я проєктую сайти у <span class="serif">Figma</span> і перетворюю їх на справжній робочий код.',
+ "hero.side":"Лендинги, сайти, презентації та креативи для соцмереж. Від ідеї до запуску, з увагою до типографіки, фотографії та деталей, які запам'ятовуються.",
+ "hero.cta1":"Дивитися роботи","hero.cta2":"Почати проєкт","hero.h1":"Денис Драка, вебдизайнер","hero.scroll":"Гортайте","work.hint":"Гортайте або тягніть · клік, щоб відкрити",
+ words:[["DENIS"],["DRAKA","c"],["·","o"],["ДИЗАЙН"],["У","o"],["КОД","c"],["·","o"],["СМІЛИВА"],["ТИПОГРАФІКА","c"],["·","o"],["СПРАВЖНІ","o"],["САЙТИ"]],
+ "work.h":'Вибрані <span class="serif">роботи</span>',"work.p":"Сім проєктів за останні місяці. Відкрийте будь-який кейс, щоб побачити шлях від брифу до готового дизайну.",
+ "proc.h":'Як я <span class="serif">працюю</span>',"proc.p":"Ті самі чотири кроки для кожного проєкту, тож ви завжди знаєте, що буде далі.",
+ "about.h":'Про <span class="serif">мене</span>',
+ "about.big":'Я Денис, junior вебдизайнер із <mark>Познані</mark>. Мені важливі <span class="serif">великі шрифти</span>, чесна фотографія та сторінки, доведені до останньої кнопки.',
+ "f.role":"Роль","f.roleV":"Вебдизайнер","f.base":"Місто","f.baseV":"Познань, Польща","f.tools":"Дизайн","f.build":"Розробка","f.buildV":"Код із Claude AI","f.lang":"Мови роботи","f.langV":"Англійська, українська",
+ "c.k":"Контакти","c.h":'Зробимо <span class="serif">сміливо.</span>',"c.copy":"Скопіювати email","c.phone":"Телефон","c.msg":"Месенджери","c.port":"Портфоліо","c.where":"Студія","c.whereV":"Познань, Польща","c.remote":"Працюю віддалено з усім світом","c.made":"Дизайн у Figma · код із Claude AI","c.top":"Нагору ↑",
+ "ov.close":"Закрити ✕",copied:"Скопійовано",copyFail:"Виділіть текст і скопіюйте вручну",view:"Відкрити кейс",next:"Наступний кейс",
+ marq:["Вебдизайн","Лендинги","Презентації","Креативи для соцмереж","Figma → код","Типографіка"],
+ badge:"ВІДКРИТИЙ ДО РОБОТИ · ВІДКРИТИЙ ДО РОБОТИ ·",
+ steps:[["Бриф","Обговорюємо мету, аудиторію і що має робити сторінка. Я фіксую це в бриф на одну сторінку, який ви затверджуєте."],["Мудборд","Збираю референси, шрифти й палітру та показую напрям ще до першого екрана."],["Дизайн у Figma","Макети для десктопа, планшета й телефона зі справжніми текстами та фото, допрацьовані за одне-два кола коментарів."],["Код і запуск","Перетворюю дизайн із Figma на чистий адаптивний код із Claude AI та перевіряю кожен екран перед передачею."]],
+ labels:{type:"Тип",year:"Рік",role:"Роль",tools:"Інструменти",palette:"Палітра",type2:"Типографіка"}}
+};
+
+/* ---------- cases ---------- */
+const CASES=[
+ {k:"vael",url:"https://claude.ai/artifact/VEcXt9pXKNewY5pgwZeZZi",cover:`<div class="cv"><img class="cv-img" src="img/vael.jpg" alt="Vaelqor website, hero block" style="object-position:22% center" loading="lazy" decoding="async"></div>`,
+  palette:["#5b4837","#93806f","#bcac9e","#ded4ca","#fdfcfb"],fonts:[["Aboreto","Headings","Aa"],["DM Sans","Body","Aa"]],
+  en:{t:"Vaelqor Architects",type:"Website · concept",year:"2026",role:"Design & build",tools:"Figma, Claude AI",sub:"A calm website for an architecture and interior studio, built around large images and a warm stone palette.",
+   lead:"A concept website for an architecture and interior studio. The goal was a site that feels as quiet and considered as the spaces it shows.",
+   steps:[["Brief","A personal concept project: a studio site where images and project cards do most of the talking, adapted for mobile and tablet."],["References","I studied Tropica for its dark expertise section and cards, Serene Spaces Studio and L'art de vivre for calm layouts and generous white space."],["Design","Started from a greyscale wireframe in Figma, then layered on a five-tone stone palette, Aboreto for headings and DM Sans for text, without changing the structure."],["Build","Turned the Figma file into responsive code with Claude AI and planned every photo and video per section with Unsplash and my own generated images."]]},
+  ua:{t:"Vaelqor Architects",type:"Сайт · концепт",year:"2026",role:"Дизайн і код",tools:"Figma, Claude AI",sub:"Спокійний сайт для архітектурної студії та студії інтер'єрів, побудований на великих фото й теплій кам'яній палітрі.",
+   lead:"Концептуальний сайт для студії архітектури та інтер'єру. Мета: сайт, такий самий тихий і продуманий, як простори, які він показує.",
+   steps:[["Бриф","Особистий концепт-проєкт: сайт студії, де головне кажуть фото й картки проєктів, адаптований для телефона та планшета."],["Референси","Вивчав Tropica за темний блок експертизи й картки, Serene Spaces Studio та L'art de vivre за спокійні макети й простір."],["Дизайн","Почав із сірого вайрфрейму у Figma, потім додав п'ятитонову кам'яну палітру, Aboreto для заголовків і DM Sans для тексту, не змінюючи структуру."],["Код","Перетворив файл Figma на адаптивний код із Claude AI та розписав фото й відео для кожного блоку з Unsplash і власних згенерованих зображень."]]}},
+ {k:"rit",url:"https://the-ritual-rust.vercel.app/",cover:`<div class="cv" style="background:#16110e"><img class="cv-img" src="img/rit.jpg" alt="The Ritual barbershop website, hero block" style="object-position:30% center" loading="lazy" decoding="async"></div>`,
+  palette:["#120f0c","#3a3020","#9c8458","#e7d3a4","#f4ede0"],fonts:[["Bodoni Moda","Headings","Aa"],["Manrope","Body","Aa"]],
+  en:{t:"The Ritual",type:"Website · barbershop",year:"2026",role:"Design & build",tools:"Figma, Claude AI",sub:"A barbershop site in dark and gold with a warm light version, barber profiles, booking and a small cosmetics shop.",
+   lead:"A website for a barbershop that feels like the visit itself: slow, warm and a little bit ceremonial.",
+   steps:[["Brief","Turn my Figma design into a working website without changing its text or cards, with the focus on photos and service cards."],["Look","Bodoni Moda for headings, Manrope for text, and a dark palette with gold accents. Later I added a warm light version that became the main one."],["Features","Barber profiles open full screen, a dark booking calendar and contacts, and a cosmetics shop block after the prices with a buy pop-up form."],["Build","Built as HTML with Claude AI, with photography from Unsplash and the footer on a light paper background."]]},
+  ua:{t:"The Ritual",type:"Сайт · барбершоп",year:"2026",role:"Дизайн і код",tools:"Figma, Claude AI",sub:"Сайт барбершопу в темному й золотому зі світлою версією, профілями барберів, записом і невеликим магазином косметики.",
+   lead:"Сайт барбершопу, який відчувається як сам візит: повільно, тепло і трохи урочисто.",
+   steps:[["Бриф","Перетворити мій дизайн із Figma на робочий сайт, не змінюючи тексти й картки, з акцентом на фото та картках послуг."],["Стиль","Bodoni Moda для заголовків, Manrope для тексту і темна палітра із золотом. Згодом додав теплу світлу версію, яка стала основною."],["Функції","Профіль барбера відкривається на весь екран, темний календар запису й контакти, блок косметики після цін із формою покупки."],["Код","Зібрано в HTML із Claude AI, фото з Unsplash, футер на світлому паперовому фоні."]]}},
+ {k:"dent",url:"https://dentalplus-eight.vercel.app/",cover:`<div class="cv" style="background:#0f1a33"><img class="cv-img" src="img/dent.jpg" alt="Dental Plus clinic website, hero block" style="object-position:center 40%" loading="lazy" decoding="async"></div>`,
+  palette:["#0f1a33","#1f3264","#f6f1ea","#e9e0d4","#ffffff"],fonts:[["Serif display","Headings","Aa"],["Sans","Body","Aa"]],
+  en:{t:"Dental Plus",type:"Website · dental clinic",year:"2026",role:"Design",tools:"Figma",sub:"A website for a dental clinic in Kyiv: services and prices, before and after cases, doctors and a consultation form.",
+   lead:"A calm, trustworthy site for a dental clinic, so a nervous patient feels at ease before the first visit.",
+   steps:[["Structure","Hero, about the clinic, services with prices, results in numbers, before and after cases, how treatment works, doctors, a consultation form and contacts with a map."],["Look","Deep navy with warm cream, a wide serif for headings and real clinic photography, so the page feels premium but not cold."],["Layout","Designed in Figma as a desktop page and a separate mobile version at 375 px."]]},
+  ua:{t:"Dental Plus",type:"Сайт · стоматологія",year:"2026",role:"Дизайн",tools:"Figma",sub:"Сайт стоматологічної клініки в Києві: послуги й ціни, кейси до і після, лікарі та форма консультації.",
+   lead:"Спокійний сайт для стоматології, якому довіряєш, щоб пацієнт почувався впевнено ще до першого візиту.",
+   steps:[["Структура","Перший екран, про клініку, послуги з цінами, результати в цифрах, кейси до і після, як проходить лікування, лікарі, форма консультації та контакти з мапою."],["Стиль","Глибокий синій із теплим кремовим, широкий антиква-шрифт для заголовків і справжні фото клініки, щоб сторінка була преміальною, але не холодною."],["Макет","Зроблено у Figma: десктопна сторінка та окрема мобільна версія на 375 px."]]}},
+ {k:"oferta",url:"https://claude.ai/artifact/RyKvMrT1u1Bkzaz5R3dxLb#demo",app:1,cover:`<div class="cv" style="background:#F3F4F7"><img class="cv-img" src="img/oferta.jpg" alt="Oferta web app, dashboard" style="object-position:left top" loading="lazy" decoding="async"></div>`,
+  palette:["#2B44E8","#E4E8FD","#F3F4F7","#12141B","#11845B"],fonts:[["Unbounded","Headings","Aa"],["Manrope","Interface","Aa"]],
+  en:{t:"Oferta",type:"Web app · freelancer CRM",year:"2026",role:"Design & build",tools:"Claude AI",sub:"A workspace for freelance designers: proposals, clients, site edits, tasks, calls and a weekly calendar.",
+   lead:"My own tool for running freelance work: every proposal, client and edit request in one place instead of scattered notes.",
+   steps:[["Problem","Proposals lived in files, client requests in chats and calls in my head. I wanted one place that also shows how much money is in the pipeline."],["Structure","A landing page, sign-in with a Claude account and a dashboard split into Work (overview, clients, proposals, edits) and Plan (tasks, calls, calendar)."],["Features","Proposals calculate prepayment and launch date, the funnel shows conversion, edits are grouped by client and site, and the calendar collects calls, deadlines and launches."],["Data","Everything is saved in a private database that only the owner can read. A demo mode with sample data lets me show the product without exposing clients."]]},
+  ua:{t:"Оферта",type:"Вебзастосунок · CRM для фрилансера",year:"2026",role:"Дизайн і код",tools:"Claude AI",sub:"Кабінет для фрилансера-дизайнера: пропозиції, клієнти, правки сайтів, задачі, дзвінки й календар на тиждень.",
+   lead:"Мій власний інструмент для фрилансу: кожна пропозиція, клієнт і правка в одному місці, а не в розкиданих нотатках.",
+   steps:[["Проблема","КП лежали у файлах, запити клієнтів у чатах, а дзвінки в голові. Хотів одне місце, яке ще й показує, скільки грошей у воронці."],["Структура","Лендинг, вхід через акаунт Claude і кабінет із двома групами: Робота (огляд, клієнти, пропозиції, правки) і План (задачі, дзвінки, календар)."],["Функції","Пропозиція сама рахує передоплату й дату запуску, воронка показує конверсію, правки згруповані за клієнтом і сайтом, а календар збирає дзвінки, дедлайни й запуски."],["Дані","Усе зберігається в закритій базі, яку бачить лише власник. Демо-режим із прикладами дає показати продукт, не відкриваючи клієнтів."]]}},
+ {k:"lab",url:"https://claude.ai/artifact/V2u1sKYqsohR8fNu1i3now",cover:`<div class="cv"><img class="cv-img" src="img/lab.jpg" alt="Лабіринт усередині, first slide" style="object-position:35% center" loading="lazy" decoding="async"></div>`,
+  palette:["#141414","#2a2a2a","#8a8a8a","#f1eee7","#9BE33B"],fonts:[["Serif display","Titles","Aa"],["Mono","Captions","Aa"]],
+  en:{t:"The Labyrinth Within",type:"Presentation",year:"2026",role:"Design",tools:"Figma",sub:"A presentation about searching for yourself, turned into an Instagram carousel, video and Threads posts.",
+   lead:"A presentation about the search for yourself, built around one image: a maze you walk through from the inside.",
+   steps:[["Text","The story was written first, then split into short slides so every screen holds one thought."],["Design","Built in Figma with a dark, quiet palette so the words and the maze motif carry the mood."],["Publishing","Released on Instagram as a post, a video and a carousel case, and on Threads, to show clients what kind of story work I do."]]},
+  ua:{t:"Лабіринт усередині",type:"Презентація",year:"2026",role:"Дизайн",tools:"Figma",sub:"Презентація про пошук себе, яка стала каруселлю в Instagram, відео та дописами в Threads.",
+   lead:"Презентація про пошук себе, побудована навколо одного образу: лабіринту, яким ідеш зсередини.",
+   steps:[["Текст","Спершу з'явилася історія, потім я розбив її на короткі слайди, щоб кожен екран тримав одну думку."],["Дизайн","Зібрано у Figma в темній спокійній палітрі, щоб настрій несли слова й мотив лабіринту."],["Публікація","Вийшла в Instagram як допис, відео та кейс-карусель, а також у Threads, щоб показати клієнтам такі історії."]]}},
+ {k:"chess",url:"https://claude.ai/artifact/TpxoiN1sjehvPnGv34nt1L",cover:`<div class="cv"><img class="cv-img" src="img/chess.jpg" alt="Шахматы, first slide" style="object-position:18% center" loading="lazy" decoding="async"></div>`,
+  palette:["#2b2620","#e9e2d0","#f5efe0","#8f7a5a"],fonts:[["Serif display","Titles","Aa"],["Mono","Dates","Aa"]],
+  en:{t:"Chess",type:"Presentation",year:"2026",role:"Design",tools:"Figma",sub:"A visual history of chess: from the first games to the modern board, told slide by slide.",
+   lead:"A presentation that tells the history of chess, from the earliest games to the board we know today.",
+   steps:[["Structure","The story follows time: each slide covers one era and one change to the game."],["Design","Built in Figma around the board itself: a strict grid, two contrasting tones and dates set like captions."]]},
+  ua:{t:"Шахи",type:"Презентація",year:"2026",role:"Дизайн",tools:"Figma",sub:"Візуальна історія шахів: від перших ігор до сучасної дошки, слайд за слайдом.",
+   lead:"Презентація про історію шахів, від найдавніших ігор до дошки, яку ми знаємо сьогодні.",
+   steps:[["Структура","Історія йде за часом: кожен слайд про одну епоху й одну зміну в грі."],["Дизайн","Зібрано у Figma навколо самої дошки: сувора сітка, два контрастні тони й дати, набрані як підписи."]]}},
+ {k:"soc",url:"https://www.figma.com/design/KHrrAS3zEEWWDu2Vc9lTMM/%D0%94%D0%B5%D0%BD%D0%B8%D1%81-%D0%94%D1%80%D0%B0%D0%BA%D0%B0---%D0%A0%D0%BE%D0%B1%D0%BE%D1%87%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%96%D1%80--?node-id=7163-3&t=nNRBejsJAmCO6Onv-1",figma:1,cover:`<div class="cv cv-cr" role="img" aria-label="Five Instagram post creatives: fitness, auto, tech, real estate, crypto"><img src="img/cr1.jpg" alt="" loading="lazy" decoding="async"><img src="img/cr2.jpg" alt="" loading="lazy" decoding="async"><img src="img/cr3.jpg" alt="" loading="lazy" decoding="async"><img src="img/cr4.jpg" alt="" loading="lazy" decoding="async"><img src="img/cr5.jpg" alt="" loading="lazy" decoding="async"></div>`,
+  palette:["#0d0d10","#FF4D1F","#2F5BFF","#3BE07A","#F1EFEA"],fonts:[["Condensed sans","Headlines","Aa"],["Grotesk","Text & labels","Aa"]],
+  en:{t:"Social creatives",type:"Instagram & Threads",year:"2026",role:"Design",tools:"Figma",sub:"Posts and stories for Instagram and Threads across five themes: fitness, cars, tech, real estate and crypto.",
+   lead:"Stories and posts for Instagram and Threads, designed as a set so every new post looks like part of the same feed.",
+   steps:[["Input","Each creative starts from a theme and a few references: personal training, a premium car, an AI product, a new build in Marbella, a crypto course."],["System","Built in my Figma workspace as reusable frames: one grid, a short list of colours and headline styles that read on a phone in a second."]]},
+  ua:{t:"Креативи для соцмереж",type:"Instagram і Threads",year:"2026",role:"Дизайн",tools:"Figma",sub:"Дописи й сторіз для Instagram і Threads на п'ять тем: фітнес, авто, технології, нерухомість і крипта.",
+   lead:"Сторіз і дописи для Instagram і Threads, зроблені як набір, щоб кожен новий пост виглядав частиною однієї стрічки.",
+   steps:[["Вхідні дані","Кожен креатив починається з теми й кількох референсів: персональні тренування, преміальне авто, AI-продукт, новобудова в Марбельї, курс про крипту."],["Система","Зібрано в моєму робочому просторі Figma як фрейми для повторного використання: одна сітка, кілька кольорів і стилі заголовків, які читаються з телефона за секунду."]]}}
+];
+
+let lang="en";try{lang=localStorage.getItem("dd-lang")||"en"}catch(e){}
+
+function renderCases(){
+  const L=T[lang];
+  $("#ribbon").innerHTML=CASES.map((c,i)=>{const d=c[lang];return `<button class="card3" data-case="${i}" aria-label="${d.t}: ${L.view}"><div class="cover">${c.cover}<span class="view">${L.view} →</span></div><div class="cap"><b>${d.t}</b><span>${d.type} · ${d.year}</span></div></button>`}).join("");
+  $("#hTrack").innerHTML=L.words.map(([w,k])=>`<span${k?` class="${k}"`:""}>${w}</span>`).join("");
+  if(window.layoutRibbon)layoutRibbon();if(window.layoutHero)layoutHero();
+  drawMazes();
+}
+function setLang(l){
+  lang=T[l]?l:"en";try{localStorage.setItem("dd-lang",lang)}catch(e){}
+  document.documentElement.lang=lang==="ua"?"uk":"en";
+  $$("[data-i]").forEach(el=>{const v=T[lang][el.dataset.i];if(v!=null)el.innerHTML=v});
+  $$("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===lang));
+  const m=T[lang].marq;$("#marq").innerHTML=[...m,...m].map((x,i)=>`<span>${i%2?`<em class="serif">${x}</em>`:x}</span>`).join("");
+  $("#steps").innerHTML=T[lang].steps.map(([h,p],i)=>`<div class="step"><span class="n">0${i+1}</span><h3>${h}</h3><p>${p}</p></div>`).join("");
+  renderCases();
+  if(!$("#ov").hidden)openCase(cur,true);
+}
+$$("[data-lang]").forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
+
+/* ---------- maze cover (generated) ---------- */
+function drawMazes(){
+  $$("canvas[data-maze]").forEach(cv=>{const r={width:cv.offsetWidth,height:cv.offsetHeight};if(!r.width)return;const dpr=Math.min(2,devicePixelRatio||1);cv.width=r.width*dpr;cv.height=r.height*dpr;
+    const g=cv.getContext("2d");g.scale(dpr,dpr);const W=r.width,H=r.height,cx=W*.7,cy=H*.42,rings=8,step=Math.min(W,H)*.05;
+    let s=7;const R=()=>(s=(s*16807)%2147483647)/2147483647;
+    g.lineCap="round";
+    for(let i=1;i<=rings;i++){const rad=i*step,gaps=1+Math.floor(R()*2);let a0=R()*Math.PI*2;
+      g.strokeStyle=`rgba(241,238,231,${.25+i/rings*.6})`;g.lineWidth=2;
+      const segs=[];let a=a0;for(let k=0;k<gaps;k++){const len=Math.PI*2/gaps-.5;segs.push([a,a+len]);a+=Math.PI*2/gaps}
+      segs.forEach(([b,e])=>{g.beginPath();g.arc(cx,cy,rad,b,e);g.stroke()});
+      if(i<rings){const sp=a0+R()*Math.PI;g.beginPath();g.moveTo(cx+Math.cos(sp)*rad,cy+Math.sin(sp)*rad);g.lineTo(cx+Math.cos(sp)*(rad+step),cy+Math.sin(sp)*(rad+step));g.stroke()}}
+    g.fillStyle="#9BE33B";g.shadowColor="#9BE33B";g.shadowBlur=14;g.beginPath();g.arc(cx,cy,6,0,7);g.fill();g.shadowBlur=0;
+  });
+}
+addEventListener("resize",drawMazes);
+
+
+/* ---------- scroll-driven hero + ribbon ---------- */
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function prog(el){const r=el.getBoundingClientRect(),span=el.offsetHeight-innerHeight;return span>0?clamp(-r.top/span,0,1):0}
+let heroP=0,trackW=0;
+window.layoutHero=function(){const t=$("#hTrack");if(!t||!t.children[1])return;
+  t.style.fontSize="";const base=parseFloat(getComputedStyle(t).fontSize),w=t.children[1].offsetLeft+t.children[1].offsetWidth;
+  t.style.fontSize=Math.min(base,base*innerWidth*.94/w)+"px";trackW=t.scrollWidth;paintHero()};
+window.heroProgress=()=>heroP;
+function paintHero(){
+  const t=$("#hTrack");if(!t)return;const vw=innerWidth,first=t.children[0],second=t.children[1];
+  /* start: DENIS DRAKA centred; end: the last word leaves on the left */
+  const startW=first&&second?second.offsetLeft+second.offsetWidth:vw*.8;
+  const x0=(vw-startW)/2,x1=-(trackW-vw*.35);
+  const e=heroP<.06?0:(heroP-.06)/.94;
+  t.style.transform=`translateX(${(x0+(x1-x0)*e).toFixed(1)}px)`;
+  const nl=$("#noteL"),nr=$("#noteR");
+  nl.style.opacity=clamp(1-heroP*4,0,1);nl.style.transform=`translateY(${-heroP*60}px)`;
+  nr.style.opacity=clamp((heroP-.25)*4,0,1)*clamp((.85-heroP)*5,0,1);nr.style.transform=`translateY(${(1-heroP)*40}px)`;
+  $("#hBar").style.width=(heroP*100)+"%";
+}
+
+/* ribbon: cards on the inside of a cylinder, the viewer at its centre */
+let ribP=0,ribOff=0,ribTarget=0,cw=520,R=1100,step=.5;
+window.layoutRibbon=function(){
+  const rb=$("#ribbon");if(!rb)return;const w=rb.clientWidth,h=rb.clientHeight;
+  cw=Math.min(w*(w<700?.7:.42),640,h*1.25);
+  R=Math.max(700,w*.9);rb.style.setProperty("--P",R+"px");rb.style.setProperty("--cw",cw+"px");
+  step=(cw*1.12)/R;drawMazes();paintRibbon(true)};
+function paintRibbon(force){
+  const cards=$$("#ribbon .card3");if(!cards.length)return;
+  const n=cards.length;
+  ribOff+=(ribTarget-ribOff)*(reduce||force?1:.12);
+  let best=0,bd=9;
+  cards.forEach((c,i)=>{
+    const a=(i-ribOff)*step;const deg=a*180/Math.PI;
+    const vis=Math.abs(a)<1.25;
+    c.style.visibility=vis?"visible":"hidden";
+    if(!vis)return;
+    c.style.transform=`translate(-50%,-56%) translateZ(${R}px) rotateY(${(-deg).toFixed(3)}deg) translateZ(${-R}px)`;
+    c.style.setProperty("--dim",(Math.min(.75,Math.abs(a)*.55)).toFixed(3));
+    c.style.zIndex=String(100-Math.round(Math.abs(a)*40));
+    c.tabIndex=Math.abs(a)<step*.6?0:-1;
+    if(Math.abs(a)<bd){bd=Math.abs(a);best=i}});
+  const d=CASES[best][lang];$("#wIdx").textContent=`${String(best+1).padStart(2,"0")} / ${String(n).padStart(2,"0")}`;$("#wTitle").textContent=d.t;
+}
+function onScroll(){
+  heroP=prog($("#hero"));paintHero();
+  ribP=prog($("#work"));ribTarget=ribP*(CASES.length-1);
+  paintHPh();
+}
+function paintHPh(){const i2=$("#hPh2"),n=$("#hPhN");if(!i2)return;const f=Math.min(1,Math.max(0,(heroP-.3)/.25));i2.style.opacity=f;i2.style.transform=`scale(${1.06-f*.06})`;n.textContent=f>.5?"02":"01";$("#hPh").style.transform=`translate(-50%,calc(-50% + ${-heroP*6}vh))`;}
+addEventListener("scroll",onScroll,{passive:true});
+addEventListener("resize",()=>{layoutHero();layoutRibbon();onScroll()});
+/* анімація стрічки працює лише поки картки рухаються, потім зупиняється (рух той самий) */
+let ribRun=false;
+function ribLoop(){paintRibbon();if(Math.abs(ribTarget-ribOff)>.0005){requestAnimationFrame(ribLoop)}else{ribOff=ribTarget;paintRibbon(true);ribRun=false}}
+function ribKick(){if(!ribRun){ribRun=true;requestAnimationFrame(ribLoop)}}
+addEventListener("scroll",ribKick,{passive:true});addEventListener("resize",ribKick);ribKick();
+
+/* drag the ribbon: turns into page scroll so the two stay in sync */
+(function(){const rb=$("#ribbon");let x0=null,s0=0,moved=false;
+  rb.addEventListener("pointerdown",e=>{if(e.pointerType!=="mouse")return;x0=e.clientX;s0=scrollY;moved=false;rb.classList.add("drag")});
+  addEventListener("pointermove",e=>{if(x0===null)return;const dx=e.clientX-x0;if(Math.abs(dx)>4)moved=true;
+    const span=$("#work").offsetHeight-innerHeight,per=span/(CASES.length-1);window.scrollTo(0,s0-dx/(cw*1.12)*per)});
+  addEventListener("pointerup",()=>{x0=null;rb.classList.remove("drag")});
+  rb.addEventListener("click",e=>{if(moved){e.stopPropagation();e.preventDefault();moved=false}},true);
+})();
+
+/* ---------- case overlay ---------- */
+let cur=0,lastFocus=null;
+function openCase(i,keep){
+  cur=(i+CASES.length)%CASES.length;const c=CASES[cur],d=c[lang],L=T[lang],nx=CASES[(cur+1)%CASES.length][lang];
+  if(!keep)lastFocus=document.activeElement;
+  $("#ovPos").textContent=`${String(cur+1).padStart(2,"0")} / ${String(CASES.length).padStart(2,"0")}`;
+  $("#ovBody").innerHTML=`
+    <div style="display:grid;gap:18px"><span class="mono" style="color:var(--muted)">${d.type}</span><h2 id="ovTitle">${d.t}</h2><p class="lead">${d.lead}</p>${c.url?`<a class="btn ov-live" href="${c.url}" target="_blank" rel="noopener noreferrer">${c.app?(lang==="ua"?"Відкрити застосунок":"Open the app"):c.figma?(lang==="ua"?"Відкрити у Figma":"Open in Figma"):/Presentation|Презентація/.test(d.type)?(lang==="ua"?"Відкрити презентацію":"Open presentation"):(lang==="ua"?"Відкрити сайт":"Visit website")} ↗</a>`:""}</div>
+    <div class="cover">${c.cover}</div>
+    <div class="ov-meta"><div><span class="mono">${L.labels.type}</span><b>${d.type}</b></div><div><span class="mono">${L.labels.year}</span><b>${d.year}</b></div><div><span class="mono">${L.labels.role}</span><b>${d.role}</b></div><div><span class="mono">${L.labels.tools}</span><b>${d.tools}</b></div></div>
+    <div class="ov-steps">${d.steps.map(([h,p])=>`<article><h3>${h}</h3><p>${p}</p></article>`).join("")}
+      <article><h3>${L.labels.palette}</h3><div class="chips">${c.palette.map(x=>`<span><i style="background:${x}"></i>${x.toUpperCase()}</span>`).join("")}</div></article>
+      <article><h3>${L.labels.type2}</h3><div class="spec">${c.fonts.map(([f,r,s])=>`<div><b style="font-family:'${f}',var(--f-serif)">${s}</b><span>${f} · ${r}</span></div>`).join("")}</div></article></div>
+    <div class="ov-next"><span></span><button id="ovNext"><span class="mono">${L.next} →</span><b>${nx.t}</b></button></div>`;
+  $("#ov").hidden=false;document.documentElement.style.overflow="hidden";if(!keep){$("#ov").scrollTop=0;$("#ovClose").focus()}
+  $("#ovNext").onclick=()=>{openCase(cur+1,true);$("#ov").scrollTop=0};
+  drawMazes();
+}
+function closeCase(){$("#ov").hidden=true;document.documentElement.style.overflow="";if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+document.addEventListener("click",e=>{const c=e.target.closest("[data-case]");if(c)openCase(+c.dataset.case)});
+$("#ovClose").onclick=closeCase;
+document.addEventListener("keydown",e=>{if($("#ov").hidden)return;if(e.key==="Escape")closeCase();if(e.key==="ArrowRight")openCase(cur+1,true);if(e.key==="ArrowLeft")openCase(cur-1,true)});
+
+/* ---------- copy ---------- */
+document.addEventListener("click",e=>{const b=e.target.closest("[data-copy]");if(!b)return;e.preventDefault();const v=b.dataset.copy;
+  try{navigator.clipboard.writeText(v).then(()=>toast(`${T[lang].copied}: ${v}`),()=>toast(T[lang].copyFail))}catch(err){toast(T[lang].copyFail)}});
+
+setLang(lang);
+(document.fonts?Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,1500))]):Promise.resolve()).then(()=>{layoutHero();layoutRibbon();onScroll()});
+layoutHero();layoutRibbon();onScroll();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/environments/RoomEnvironment.js"></script>
+<script>
+/* ---------- floating shards around the words ---------- */
+(function(){
+  const cv=document.getElementById("shards");if(typeof THREE==="undefined"||!cv)return;
+  let ok=false;try{ok=!!(cv.getContext("webgl2")||cv.getContext("webgl"))}catch(e){}if(!ok)return;
+  const still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const r=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+  r.setPixelRatio(Math.min(devicePixelRatio,1.75));r.outputEncoding=THREE.sRGBEncoding;r.toneMapping=THREE.ACESFilmicToneMapping;
+  const scene=new THREE.Scene();
+  if(THREE.RoomEnvironment){const pm=new THREE.PMREMGenerator(r);scene.environment=pm.fromScene(new THREE.RoomEnvironment(),.04).texture;pm.dispose()}
+  const cam=new THREE.PerspectiveCamera(30,1,.1,100);cam.position.set(0,0,9);
+  const lin=h=>new THREE.Color(h).convertSRGBToLinear();
+  const mats=[new THREE.MeshStandardMaterial({color:lin(0x2a0008),roughness:.3,metalness:.4,envMapIntensity:1.1}),
+              new THREE.MeshStandardMaterial({color:lin(0x8a0f28),roughness:.25,metalness:.1,envMapIntensity:1.2}),
+              new THREE.MeshPhysicalMaterial({color:lin(0xEDEEF0),roughness:.15,clearcoat:1,envMapIntensity:1})];
+  let seed=5;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  const shards=[];for(let i=0;i<26;i++){const k=i%9===0?2:i%3===0?1:0;
+    const g=rnd()>.5?new THREE.TetrahedronGeometry(.06+rnd()*.12):new THREE.OctahedronGeometry(.05+rnd()*.09);
+    const m=new THREE.Mesh(g,mats[k]);m.position.set((rnd()-.5)*10,(rnd()-.5)*5.2,(rnd()-.5)*4);
+    m.rotation.set(rnd()*6,rnd()*6,0);m.userData={sp:.3+rnd()*.7,ph:rnd()*6,depth:.4+rnd()*1.2,y0:m.position.y,x0:m.position.x};scene.add(m);shards.push(m)}
+  const key=new THREE.DirectionalLight(0xfff1e6,2.2);key.position.set(-3,5,6);scene.add(key);
+  const rim=new THREE.PointLight(0xff2a4a,30,20,2);rim.position.set(3,1,-2);scene.add(rim);
+  let mx=0,my=0,smx=0,smy=0;addEventListener("pointermove",e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5},{passive:true});
+  function size(){const w=cv.clientWidth,h=cv.clientHeight;if(!w||!h)return;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+  size();addEventListener("resize",size);
+  let on=true;new IntersectionObserver(es=>es.forEach(e=>on=e.isIntersecting)).observe(cv);
+  function frame(t){if(on){const p=window.heroProgress?window.heroProgress():0,s=still?0:t*.001;smx+=(mx-smx)*.05;smy+=(my-smy)*.05;
+    shards.forEach(m=>{const u=m.userData;m.rotation.x+=.005*u.sp;m.rotation.y+=.007*u.sp;
+      m.position.y=u.y0+Math.sin(s*u.sp+u.ph)*.18+p*u.depth*2.2-smy*u.depth*.3;
+      m.position.x=u.x0-p*u.depth*3-smx*u.depth*.5});
+    r.render(scene,cam)}requestAnimationFrame(frame)}
+  requestAnimationFrame(frame);
+})();
+</script>
+
+</body></html>
